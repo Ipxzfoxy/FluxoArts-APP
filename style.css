@@ -1,3 +1,166 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+header {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background-color: #ddd;
+}
+
+
+.indicator {
+    position: absolute;
+    bottom: -2px;
+    height: 4px;
+    width: 60px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: left 0.3s ease;
+}
+
+
+header nav ul li:nth-child(1) a.active ~ .indicator {
+    left: 0;
+}
+header nav ul li:nth-child(2) a.active ~ .indicator {
+    left: 120px;
+}
+header nav ul li:nth-child(3) a.active ~ .indicator {
+    left: 240px;
+}
+
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: left; 
+}
+
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Lista */
+ul {
+    padding-left: 20px;
+    text-align: left; 
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: #007bff; /* Azul */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+ul li a:hover {
+    color: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons .material-icons {
+    font-size: 24px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+footer .social-icons .material-icons:hover {
+    transform: scale(1.2);
+}
+
+
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-bottom: 80px; 
+}
+
+
+footer {
+    text-align: center;
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 /* Tema escuro */
 body.dark-theme {
     background-color: #121212;
